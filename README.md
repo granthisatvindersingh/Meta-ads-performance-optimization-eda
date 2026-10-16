@@ -1,6 +1,8 @@
-📊 Pinnacle Meta Ads Campaign Dataset – Marketing Analytics & Performance Optimization eda
-tools : Python,numpy,pandas,matplotlib,seaborn,excel,pivot
-📌 Project Overview
+# 📊 Pinnacle Meta Ads Campaign Dataset – Marketing Analytics & Performance Optimization eda
+
+### tools : Python,numpy,pandas,matplotlib,seaborn,excel,pivot
+
+## 📌 Project Overview
 This project focuses on cleaning, transforming, and analyzing a Meta Ads campaign dataset containing:
 
 10000+ rows (Ads)
@@ -16,164 +18,178 @@ High null-value fields
 Mixed data types
 The primary objective was to prepare the dataset in Excel and perform advanced Exploratory Data Analysis (EDA) in Python to generate actionable marketing insights.
 
-🧹 Phase 1: Excel Data Cleaning & Structuring
-🔹 JSON Column Handling
+## 🧹 Phase 1: Excel Data Cleaning & Structuring
+## 🔹 JSON Column Handling
 Extracted targeting information (age range, interests, behaviors, geo-location).
 Removed raw nested JSON columns after flattening key fields.
 Reduced structural complexity for analytical clarity.
-🔹 Data Standardization
+## 🔹 Data Standardization
 Converted dates, currency, and numeric fields to appropriate formats.
 Ensured Ad ID uniqueness.
 Cleaned text-based NaN values to avoid Python parsing issues.
-🔹 Column Reduction & Optimization
+## 🔹 Column Reduction & Optimization
 Removed columns with 80–90% null values.
 Dropped hourly breakdown columns (recalculable in Python).
 Deleted weekday-specific columns (can be derived from date).
 Removed derivable metrics such as Ad Rank, Top 25% CPC etc.
 Focused dataset on core KPIs.
-🔹 Feature Engineering
+## 🔹 Feature Engineering
 Created new calculated metrics:
 
 Engagement Rate (24hr, 7-day, overall)
 Conversion Rate (24hr, 7-day, overall)
 Monthly performance column
 Date range & time-based derived columns
-📊 Excel Pivot Analysis
+# 📊 Excel Pivot Analysis
 Performed structured pivot summaries for:
 
-Platform-Level Analysis
+### Platform-Level Analysis
 Total Spend
 Total Conversions
 Average CPC
 Conversion Rate
-Campaign-Level Performance
+### Campaign-Level Performance
 Payments
 Cost per Payment (CPLPV)
 ROI %
 CTR %
-Daily Performance Summary
+### Daily Performance Summary
 Day-wise payments
 CPC trends
 Conversion trends
-🐍 Phase 2: Python-Based EDA
+## 🐍 Phase 2: Python-Based EDA
 Libraries Used:
 
-Pandas
-NumPy
-Matplotlib
-Seaborn
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+
 Analysis Performed:
 
-KPI recalculation validation
-Null and anomaly checks
-Distribution analysis
-Platform comparison
-Campaign efficiency benchmarking
-Correlation analysis
-Outlier detection
-📈 Final Insights & Optimization Decisions
-🔹 Ad-Level Performance Decision
+* KPI recalculation validation
+* Null and anomaly checks
+* Distribution analysis
+* Platform comparison
+* Campaign efficiency benchmarking
+* Correlation analysis
+* Outlier detection
+# 📈 Final Insights & Optimization Decisions
+## 🔹 Ad-Level Performance Decision
 Out of 237 Ads:
 
-✅ 24 Ads meet performance benchmarks
+* ✅ 24 Ads meet performance benchmarks
 (High CTR + Low CPC + Strong Conversion Rate)
 
-⏸ 183 Ads currently paused
+* ⏸ 183 Ads currently paused
 (Below target benchmark performance)
 
-❌ 30 Ads recommended for discontinuation
+* ❌ 30 Ads recommended for discontinuation
 (Low CTR, High CPC, Poor Conversion)
 
 Platform Performance (Winning Platform)
 Ads Recommended to Continue:
 
-Facebook: 6
-Instagram: 7
-Threads: 11
+* Facebook: 6
+* Instagram: 7
+* Threads: 11
+
 📌 Threads emerged as the strongest performing platform.
 
-📅 Best Day to Run Ads
+# 📅 Best Day to Run Ads
 Tuesday is the highest performing day:
 
-308 Payments
-Lowest CPC: ₹3.5
-Above-average conversion rate
+* 308 Payments
+* Lowest CPC: ₹3.5
+* Above-average conversion rate
+
 📌 Recommendation: Increase budget allocation on Tuesdays.
 
-🎯 Campaign-Level Insights
-🥇 Best Performing Campaign
+# 🎯 Campaign-Level Insights
+## 🥇 Best Performing Campaign
 "VM || Delhi NCR || Traffic"
-Lowest CPC: ₹1.16
-Highest Payments: 568
-Strong Conversion Rate: 0.77
+* Lowest CPC: ₹1.16
+* Highest Payments: 568
+* Strong Conversion Rate: 0.77
+
 📌 Recommended to continue & scale.
 
-⚠ Needs Optimization
+## ⚠ Needs Optimization
 "Web App | Conversion"
-Highest Spend: ₹181K+
-High CPC: ₹13.26
-Low Conversion Rate: 0.37
+* Highest Spend: ₹181K+
+* High CPC: ₹13.26
+* Low Conversion Rate: 0.37
+
 📌 Requires targeting and cost optimization.
 
-📣 Awareness Campaign Analysis
+## 📣 Awareness Campaign Analysis
 "VM Brand Awareness"
-8.79% of total spend
-Very cost-efficient CTR: ₹0.08
-Poor in direct conversions
+* 8.79% of total spend
+* Very cost-efficient CTR: ₹0.08
+* Poor in direct conversions
+
 📌 Effective for reach, not for payment conversion objective.
 
-❌ Least Performing Campaigns (Discontinue)
-"ToF Engagement"
-"Straight Outta"
+## ❌ Least Performing Campaigns (Discontinue)
+* "ToF Engagement"
+* "Straight Outta"
+
 Both campaigns generated:
 
-0 Payments
-Consumed budget
+* 0 Payments
+* Consumed budget
+
 📌 Recommended to discontinue.
 
-👥 Ad Set-Level Insights
-🥇 Top Performing Ad Set
+# 👥 Ad Set-Level Insights
+## 🥇 Top Performing Ad Set
 "Women - Clubbed Audience"
-567 Payments
-Lowest CPLPV: ₹2.30
-Strong Conversion Rate: 0.81
+* 567 Payments
+* Lowest CPLPV: ₹2.30
+* Strong Conversion Rate: 0.81
+  
 📌 High-performing segment – recommended to scale.
 
 "RMK - Waitlist"
-Conversion Rate: 1.05
-CPLPV: ₹18.50
-Slightly higher CPC but strong efficiency
+* Conversion Rate: 1.05
+* CPLPV: ₹18.50
+* Slightly higher CPC but strong efficiency
+  
 📌 Maintain & optimize budget.
 
-❌ Underperforming Ad Sets (Discontinue)
+## ❌ Underperforming Ad Sets (Discontinue)
 Ad sets with 0 payments but budget consumption:
 
-Dating Apps
-Entrepreneurship Insta
-Travel Insta
-Interest-Based Dinner
+* Dating Apps
+* Entrepreneurship Insta
+* Travel Insta
+* Interest-Based Dinner
+  
 📌 Recommended to stop to prevent further budget leakage.
 
-📢 Top Performing Ads
+# 📢 Top Performing Ads
 Top 5 Ads (High Spend % + High Payments):
 
-Monkey UGC
-Ad – 1 (5 Strangers)
-Saturday Night
-Ranveer
-Instagram Post – Latest StepOut Dinner
-🏆 Top 3 Ads (Most Efficient)
-Monkey UGC
-Saturday Night
-Ranveer
+* Monkey UGC
+* Ad – 1 (5 Strangers)
+* Saturday Night
+* Ranveer
+* Instagram Post – Latest StepOut Dinner
+  
+## 🏆 Top 3 Ads (Most Efficient)
+* Monkey UGC
+* Saturday Night
+* Ranveer
+
 Metrics:
 
-High Payments
-CPLPV below ₹1.5
-Conversion Rate ~0.70
+* High Payments
+* CPLPV below ₹1.5
+* Conversion Rate ~0.70
+
 📌 Recommended for scaling.
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 Microsoft Excel (Cleaning + Pivot Analysis)
 Python (Pandas, NumPy)
 Matplotlib & Seaborn
